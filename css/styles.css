@@ -1,0 +1,296 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 1rem 2rem;
+    margin-bottom: 1rem;
+}
+
+header .logo img {
+    width: 150px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    background-color: #fff;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero img {
+    width: 90%;
+    height: 70%;
+    max-height: 70%;
+    border-radius: 8px;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.hero-text .emphasis {
+    color: #EF8535;
+}
+
+.about-us {
+    padding: 2rem;
+    background-color: #F4F4F4;
+}
+
+.about-us h2 {
+    text-align: center;
+    font-size: 3rem;
+    color: black;
+    margin-bottom: 1.5rem;
+}
+
+.about-us .content {
+    color: black;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-us .content .image img {
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.about-us .content .text {
+    max-width: 600px;
+}
+
+.about-us .content .text p {
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    line-height: 1.5;
+}
+
+
+.expertise {
+    padding: 2rem;
+    text-align: center;
+}
+
+.expertise h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #EF8535;
+}
+
+.cards {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.card {
+    background-color: #F4F4F4;
+    padding: 1rem;
+    border-radius: 8px;
+    width: 200px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.card h3 {
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+    color: black;
+}
+
+.card p {
+    font-size: 0.9rem;
+    color: black;
+}
+
+.why-choose-us {
+    background-color: #F4F4F4;
+    padding: 2rem;
+    text-align: center;
+}
+
+.why-choose-us h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #EF8535;
+}
+
+.reasons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.reason {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    width: 180px;
+    text-align: left;
+}
+
+.reason h3 {
+    color: #EF8535;
+    font-size: 2rem;
+    margin: 0;
+}
+
+.reason p {
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+.who-we-are {
+    padding: 2rem;
+    background-color: #EF8535;
+}
+
+.who-we-are h2 {
+    text-align: center;
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 1.5rem;
+}
+
+.who-we-are .content {
+    color: #fff;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.who-we-are .content .image img {
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.who-we-are .content .text {
+    max-width: 600px;
+}
+
+.who-we-are .content .text p {
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    line-height: 1.5;
+}
+
+.who-we-are .cta-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.who-we-are .btn {
+    background-color: #fff;
+    color: black;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.who-we-are .btn1 {
+    background-color: #25D366;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.services {
+    padding: 2rem;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.cards {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+    background-color: black;
+    color: white;
+}
+
+.footer-content .logo img {
+    width: 100px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.footer-links h3 {
+    margin-bottom: 0.5rem;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-links ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    background-color: black;
+    text-align: center;
+    padding: 1rem;
+    color: white;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
