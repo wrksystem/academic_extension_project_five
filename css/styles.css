@@ -118,7 +118,17 @@ nav ul li a:hover::after{
 .about-us .content .image img {
     width: 300px;
     height: auto;
-    border-radius: 8px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.8);
+    background-size: cover;
+    transition: all 0.8s;
+}
+
+.about-us .content .image img:hover {
+    transform: scale(0.9);
 }
 
 .about-us .content .text {
@@ -159,7 +169,17 @@ nav ul li a:hover::after{
 .card img {
     width: 100%;
     height: auto;
-    border-radius: 8px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.8);
+    background-size: cover;
+    transition: all 0.8s;
+}
+
+.card img:hover {
+    transform: scale(0.9);
 }
 
 .card h3 {
@@ -287,6 +307,18 @@ nav ul li a:hover::after{
     justify-content: center;
 ;
 }
+
+.content video{
+    border-radius: 6px;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 1.0);
+}
+
+
+
+
 
 .footer-content {
     display: flex;
