@@ -53,6 +53,149 @@ nav ul li a:hover::after{
     color: rgb(255, 255, 255);
 }
 
+.heroOne {
+    position: relative;
+    text-align: center;
+    color: black;
+}
+
+form {
+    width: 70%;
+    margin: 0em auto;
+  }
+  
+  input[type="text"],
+  input[type="password"],
+  input[type="email"],
+  textarea {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -o-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    background: gainsboro;
+    color: black;
+    border: black;
+    display: block;
+    outline: 0;
+    padding: 1em 1em;
+    text-decoration: none;
+    width: 100%;
+    border-radius: 6px;
+  }
+  
+  input[type="text"]:focus,
+  input[type="password"]:focus,
+  input[type="email"]:focus,
+  textarea:focus {
+    border-color: black;
+  }
+  
+  textarea {
+    min-height: 14em;
+  }
+  
+  input[type="text"],
+  input[type="password"],
+  input[type="email"] {
+    line-height: 1em;
+  }
+  
+  ::-webkit-input-placeholder {
+    color: inherit;
+    opacity: 0.5;
+    position: relative;
+    top: 3px;
+  }
+  
+  :-moz-placeholder {
+    color: inherit;
+    opacity: 0.5;
+  }
+  
+  ::-moz-placeholder {
+    color: inherit;
+    opacity: 0.5;
+  }
+  
+  :-ms-input-placeholder {
+    color: inherit;
+    opacity: 0.5;
+  }
+  
+  
+  .formerize-placeholder {
+    color: rgba(85, 85, 85, 0.5) !important;
+  }
+
+  input[type="submit"],
+input[type="reset"],
+input[type="button"],
+.button {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -o-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  -moz-transition: background-color 0.35s ease-in-out;
+  -webkit-transition: background-color 0.35s ease-in-out;
+  -o-transition: background-color 0.35s ease-in-out;
+  -ms-transition: background-color 0.35s ease-in-out;
+  transition: background-color 0.35s ease-in-out;
+  background: #000000;
+  border-radius: 6px;
+  border: 0;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  padding: 0.75em 1.5em;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #fff !important;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover,
+.button:hover {
+  background: #EF8535;
+}
+
+input[type="submit"].alt,
+input[type="reset"].alt,
+input[type="button"].alt,
+.button.alt {
+  border: 1px solid #fff;
+  color: #0f1116;
+}
+
+input[type="submit"].fit,
+input[type="reset"].fit,
+input[type="button"].fit,
+.button.fit {
+  width: 100%;
+}
+
+input[type="submit"].small,
+input[type="reset"].small,
+input[type="button"].small,
+.button.small {
+  font-size: 0.8em;
+}
+
+input[type="submit"].medium,
+input[type="reset"].medium,
+input[type="button"].medium,
+.button.medium {
+  padding: 0.8em 2em;
+  font-size: 1.6em;
+}
+
+
 .hero img {
     position: relative;
     max-height: 100%;

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar Solutions</title>
+
+    <style>
+        .error-message {
+          color: red;
+          display: none;
+        }
+      </style>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+
+    <link rel="stylesheet" href="/css/styles.css">
+    
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/assets/images/logo.png" alt="Company Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Início</a></li>
+                <li><a href="#about">Sobre Nós</a></li>
+                <li><a href="#services">Serviços</a></li>
+                <li><a href="/pages/financing.html">Financiamento</a></li>
+                <li><a href="/pages/contact.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <section class="heroOne">
+
+        <form id="userForm">
+            <div class="row half">
+              <div class="12u">
+                <input
+                  class="text"
+                  type="text"
+                  name="nome"
+                  id="nome"
+                  placeholder="Nome Completo:"
+                  required
+                />
+              </div>
+            </div>
+            <br>
+            <div class="row half">
+              <div class="12u">
+                <input
+                  class="text"
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Email:"
+                  required
+                />
+                <span class="error-message" id="error-message">Por favor, insira um endereço de e-mail válido.</span>
+              </div>
+            </div>
+            <br>
+            <div class="row half">
+              <div class="12u">
+                <input
+                  class="telefone"
+                  type="text"
+                  name="telefone"
+                  id="tel"
+                  placeholder="Telefone:"
+                  required
+                />
+              </div>
+            </div>
+            <br>        
+            <div class="row half">
+              <div class="12u">
+                <textarea
+                  class="proposta"
+                  name="proposta"
+                  type="text"
+                  id="message"
+                  placeholder="Descreva o seu projeto:"
+                  required
+                ></textarea>
+              </div>
+            </div>
+            <br>
+            <div class="row half">
+              <div class="12u">
+                <ul class="actions">
+                  <li>
+                    <input
+                      type="submit"
+                      value="SOLICITAR ORÇAMENTO"
+                      class="button alt"
+                    />
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </form>
+
+    </section>
+
+      <footer>
+        <div class="footer-content">
+            <div class="logo">
+                <img src="/assets/images/logo.png" alt="Company Logo">
+                <p>WGM AgriSolutions</p>
+            </div>
+            <div class="footer-links">
+                
+                <div class="quick-links">
+                    <h3>Acesso Rápido</h3>
+                    <ul>
+                        <li><a href="#inicio">Início</a></li>
+                        <li><a href="#about">Sobre Nós</a></li>
+                        <li><a href="#services">Serviços</a></li>
+                        <li><a href="/pages/financing.html">Financiamento</a></li>
+                        <li><a href="/pages/contact.html">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="services">
+                    <h3>Serviços</h3>
+                    <ul>
+                        <li><a href="#">Energia Solar</a></li>
+                        <li><a href="#">Consultoria</a></li>
+                        <li><a href="#">Suporte</a></li>
+                    </ul>
+                </div>
+                <div class="contact">
+                    <h3>Contato</h3>
+                    <ul>
+                        <li><a href="#"><img src="/assets/icons/phone.png" alt=""></a>Telefone: +55 (65) 99693-3468</li>
+                        <li><a href="#"><img src="/assets/icons/email.png" alt=""></a>E-mail: @wgmagrisolutions</li>
+                        <li>Siga-nos: 
+                            <a href="https://www.facebook.com/profile.php?id=100063809233199&locale=nb_NO"><img src="/assets/icons/facebook-icon.png" alt="Facebook"></a>
+                            <a href="https://www.instagram.com/wgm_energiasolar/"><img src="/assets/icons/instagram-icon.png" alt="Instagram"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 - Developed by Werik Rodrigues Design</p>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('email').addEventListener('input', function () {
+          const emailField = this;
+          const errorMessage = document.getElementById('error-message');
+          const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    
+          if (emailField.value.match(emailPattern)) {
+            errorMessage.style.display = 'none';
+          } else {
+            errorMessage.style.display = 'block';
+          }
+        });
+      </script>
+
+    <script>
+        $(document).ready(function(){
+          $('#tel').mask('(00) 00000-0000');
+        });
+      </script>
+    <script src="/js/bd.js"></script>
+</body>
+
+</html>
