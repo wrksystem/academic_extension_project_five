@@ -168,6 +168,7 @@ nav ul li a:hover::after{
 
 .card img {
     width: 100%;
+    
     height: auto;
     border-radius: 10px;
     overflow: hidden;
@@ -313,19 +314,14 @@ nav ul li a:hover::after{
     overflow: hidden;
     position: relative;
     display: inline-block;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 1.0);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.6);
 }
-
-.content cta-buttons{
-    border-radius: 1px;
-
-}
-
-
 
 .footer-content {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between; 
+    align-items: flex-start; 
+    text-align: left; 
     padding: 2rem;
     background-color: black;
     color: white;
@@ -336,8 +332,9 @@ nav ul li a:hover::after{
 }
 
 .footer-links {
-    display: flex;
-    gap: 2rem;
+    display: contents;
+    text-align:justify ;
+    gap: 1rem;
 }
 
 .footer-links h3 {
@@ -355,8 +352,10 @@ nav ul li a:hover::after{
 
 .footer-links ul li a {
     color: white;
+    text-align: center;
     text-decoration: none;
 }
+
 
 .footer-bottom {
     background-color: black;
