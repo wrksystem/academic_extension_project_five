@@ -9,6 +9,10 @@ https://wgmagrisolutions.vercel.app/
 ### INTEGRANTE
 Werik Rodrigues de Andrade</br>
 Phelipe Silva Botelho</br>
+Nícolas Correia Alves</br>
+Bruno Bortolanza Baiocco</br>
+João Vitor Alves da Silva</br>
+
 
 ## QUAL O OBJETIVO DO PROJETO DE EXTENSÃO ACADÊMCIA?
 
